@@ -7,6 +7,7 @@ public class PlayerControler : MonoBehaviour
 {
 
     public float moveSpeed = 10.0f;
+    public float movementCutoff = 8.5f;
 
     public InputAction moveAction;
     private Vector2 moveInput;
@@ -43,6 +44,15 @@ public class PlayerControler : MonoBehaviour
     {
         moveInput = moveAction.ReadValue<Vector2>();
         transform.Translate(moveInput * moveSpeed * Time.deltaTime);
+
+        if (transform.position.x > movementCutoff)
+        {
+            transform.position = new Vector3(movementCutoff, transform.position.y, transform.position.z);
+        }
+        else if (transform.position.x < -movementCutoff)
+        {
+            transform.position = new Vector3(-movementCutoff, transform.position.y, transform.position.z);
+        }
     }
 
     void NetUsingLogic()
