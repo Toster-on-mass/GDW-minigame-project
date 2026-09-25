@@ -11,6 +11,7 @@ public class PlayerControler : MonoBehaviour
 
     public InputAction moveAction;
     private Vector2 moveInput;
+    private Vector2 currentFacingDirection = new Vector2(1,0);
     public InputAction netAction;
 
     // 0 - Default Movement
@@ -47,6 +48,13 @@ public class PlayerControler : MonoBehaviour
         moveInput = moveAction.ReadValue<Vector2>();
         transform.Translate(moveInput * moveSpeed * Time.deltaTime);
 
+        // Need to make it not the input or it can be 0
+        if (moveInput.x != 0)
+        {
+            currentFacingDirection = moveInput;
+        }
+
+        // This is one wall you cannot crawl, Spiderman
         if (transform.position.x > movementCutoff)
         {
             transform.position = new Vector3(movementCutoff, transform.position.y, transform.position.z);
@@ -63,6 +71,7 @@ public class PlayerControler : MonoBehaviour
         if (netTimerCurrent >= netTimer && currentState != 2)
         {
             currentState = 0;
+            playerNetCapture.DeactivateNet();
         }
     }
 
@@ -72,6 +81,7 @@ public class PlayerControler : MonoBehaviour
         {
             netTimerCurrent = 0.0f;
             currentState = 1;
+            playerNetCapture.ActivateNet(currentFacingDirection);
         }
     }
 }

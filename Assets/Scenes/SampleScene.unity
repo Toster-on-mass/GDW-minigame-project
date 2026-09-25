@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 476700047}
   - component: {fileID: 476700046}
   - component: {fileID: 476700045}
+  - component: {fileID: 476700048}
   m_Layer: 0
   m_Name: NetCapure
   m_TagString: Untagged
@@ -495,6 +496,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476700043}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &476700048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476700043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679d5c83fbbbcd449ae6162b6ad810c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NetCapture
+  distence: 1
+  direction: {x: 0, y: 0}
+  active: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +672,7 @@ MonoBehaviour:
     m_Priority: 0
   currentState: 0
   netTimer: 1
+  playerNetCapture: {fileID: 476700048}
 --- !u!65 &1796037075
 BoxCollider:
   m_ObjectHideFlags: 0

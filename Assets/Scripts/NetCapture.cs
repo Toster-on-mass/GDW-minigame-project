@@ -4,7 +4,7 @@ public class NetCapture : MonoBehaviour
 {
 
     public float distence = 1.0f;
-    public Vector3 direction;
+    public Vector2 direction;
     public bool active = false;
 
     void Start()
@@ -24,12 +24,12 @@ public class NetCapture : MonoBehaviour
         }
     }
 
-    void ActivateNet(Vector3 newDir)
+    public void ActivateNet(Vector2 newDir)
     {
         direction = newDir;
         active = true;
     }
-    void DeactivateNet()
+    public void DeactivateNet()
     {
         active = false;
     }
