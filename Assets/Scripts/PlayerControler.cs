@@ -21,6 +21,8 @@ public class PlayerControler : MonoBehaviour
     public float netTimer = 1.0f;
     private float netTimerCurrent = 0;
 
+    public NetCapture playerNetCapture;
+
     void Start()
     {
         moveAction.Enable();
