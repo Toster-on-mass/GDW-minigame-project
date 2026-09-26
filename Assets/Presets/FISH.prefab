@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf764eca5b878a468abddc71709c950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishJump
-  jumpBoost: 3
+  jumpBoost: 2.7
   body: {fileID: 5735986511241019392}
 --- !u!54 &5735986511241019392
 Rigidbody:

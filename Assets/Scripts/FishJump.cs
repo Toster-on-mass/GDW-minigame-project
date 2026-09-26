@@ -21,12 +21,9 @@ public class FishJump : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log(other.GetType());
 
         if (other.GetComponent<FishJumpTrigger>())
         {
-
-            Debug.Log("Has it");
             body.AddForce(Vector3.up * jumpBoost, ForceMode.Impulse);
         }
     }
