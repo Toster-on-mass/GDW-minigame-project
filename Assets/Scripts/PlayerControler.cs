@@ -20,9 +20,14 @@ public class PlayerControler : MonoBehaviour
     public int currentState = 0;
 
     public float netTimer = 1.0f;
+    public float netActiveTimer = 0.3f;
     private float netTimerCurrent = 0;
 
     public NetCapture playerNetCapture;
+    public KillFish playerFishKiller;
+    public MeshRenderer netPrototypeMeshRenderer;
+    public Material[] netPrototypeMats;
+
 
     void Start()
     {
@@ -68,10 +73,18 @@ public class PlayerControler : MonoBehaviour
     void NetUsingLogic()
     {
         netTimerCurrent += Time.deltaTime;
+
+        if (netTimerCurrent >= netActiveTimer && currentState != 2)
+        {
+            playerFishKiller.active = false;
+            netPrototypeMeshRenderer.material = netPrototypeMats[1];
+        }
+
         if (netTimerCurrent >= netTimer && currentState != 2)
         {
             currentState = 0;
             playerNetCapture.DeactivateNet();
+            netPrototypeMeshRenderer.material = netPrototypeMats[2];
         }
     }
 
@@ -82,6 +95,8 @@ public class PlayerControler : MonoBehaviour
             netTimerCurrent = 0.0f;
             currentState = 1;
             playerNetCapture.ActivateNet(currentFacingDirection);
+            playerFishKiller.active = true;
+            netPrototypeMeshRenderer.material = netPrototypeMats[0];
         }
     }
 }

@@ -526,7 +526,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.78, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796037078}
@@ -546,12 +546,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 7.54, z: 0.28}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.87, y: 7.54, z: 2.69}
+  m_Center: {x: 0, y: 0, z: -0.19}
 --- !u!23 &476700046
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679d5c83fbbbcd449ae6162b6ad810c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NetCapture
-  distence: 1.5
+  distence: 2
   direction: {x: 0, y: 0}
   active: 0
 --- !u!114 &476700049
@@ -636,6 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a7057e32c8d2cc49a27d3b9d528fc0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillFish
+  active: 0
 --- !u!1 &610470282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,8 +1207,15 @@ MonoBehaviour:
     m_Flags: 0
     m_Priority: 0
   currentState: 0
-  netTimer: 1
+  netTimer: 0.45
+  netActiveTimer: 0.35
   playerNetCapture: {fileID: 476700048}
+  playerFishKiller: {fileID: 476700049}
+  netPrototypeMeshRenderer: {fileID: 476700046}
+  netPrototypeMats:
+  - {fileID: 2100000, guid: 0d6031ac8a6d0994286d0731406210f5, type: 2}
+  - {fileID: 2100000, guid: 80130ff07c7de4a4d8e36e5cce093082, type: 2}
+  - {fileID: 2100000, guid: 07ece7f87e3daea498ccf25f646b3390, type: 2}
 --- !u!65 &1796037075
 BoxCollider:
   m_ObjectHideFlags: 0
