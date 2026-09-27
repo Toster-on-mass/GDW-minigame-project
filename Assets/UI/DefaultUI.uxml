@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="0" name="ScoreLabel" style="height: 70px; width: auto; font-size: 114px; -unity-text-align: upper-center; -unity-text-outline-color: rgb(0, 0, 0); letter-spacing: 1px; -unity-text-outline-width: 5px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+</ui:UXML>
