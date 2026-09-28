@@ -20,11 +20,11 @@ public class FishJump : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        FishJumpTrigger fishTrigger = other.GetComponent<FishJumpTrigger>();
 
-
-        if (other.GetComponent<FishJumpTrigger>())
+        if (fishTrigger)
         {
-            body.AddForce(Vector3.up * jumpBoost, ForceMode.Impulse);
+            body.AddForce(Vector3.up * jumpBoost * fishTrigger.jumpMult, ForceMode.Impulse);
         }
     }
 }

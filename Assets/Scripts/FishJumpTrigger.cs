@@ -4,7 +4,7 @@ public class FishJumpTrigger : MonoBehaviour
 {
     // You know what that means: FISH
 
-    public float jumpBoost = 10.0f;
+    public float jumpMult = 1.0f;
     void Start()
     {
         
