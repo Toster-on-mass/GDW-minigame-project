@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
   spawnRangeA: {x: -7, y: -3, z: 35}
-  spawnRangeB: {x: 7, y: -3, z: 35}
+  spawnRangeB: {x: 7, y: -3, z: 40}
   objects:
   - {fileID: 852853026261446970, guid: 2f2f749b718effc40b8db4a7c43269bd, type: 3}
   startPause: 0.2
@@ -902,7 +902,7 @@ MonoBehaviour:
   minimunSpawnTime: 0.2
   spawnTimeDecrease: 0.05
   difStartPause: 1
-  difIncreaseTime: 3
+  difIncreaseTime: 1.5
 --- !u!4 &690506010
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ Transform:
   m_GameObject: {fileID: 910820857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.5, z: 53.2}
+  m_LocalPosition: {x: 0, y: -3.5, z: 93.8}
   m_LocalScale: {x: 21.168175, y: 0.09608784, z: 159.84}
   m_ConstrainProportionsScale: 0
   m_Children:
