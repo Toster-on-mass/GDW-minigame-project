@@ -899,6 +899,10 @@ MonoBehaviour:
   - {fileID: 852853026261446970, guid: 2f2f749b718effc40b8db4a7c43269bd, type: 3}
   startPause: 0.2
   spawnTime: 1.5
+  minimunSpawnTime: 0.2
+  spawnTimeDecrease: 0.05
+  difStartPause: 1
+  difIncreaseTime: 3
 --- !u!4 &690506010
 Transform:
   m_ObjectHideFlags: 0
