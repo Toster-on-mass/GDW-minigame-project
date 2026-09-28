@@ -15,6 +15,8 @@ public class UImanager : MonoBehaviour
         resartButton = root.Q<Button>("RestartButton");
 
         resartButton.clicked += () => RestartScene();
+
+        SetButtonVisiblity(false);
     }
 
     public void UpdateScore(int newScore)
@@ -25,5 +27,10 @@ public class UImanager : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SetButtonVisiblity(bool newVisible)
+    {
+        resartButton.visible = newVisible;
     }
 }

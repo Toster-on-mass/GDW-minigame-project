@@ -1550,6 +1550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ffcd7fb3993ac24ea6408664b82d214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathUponFish
+  connectedIU: {fileID: 1833658176}
 --- !u!1 &1833658173
 GameObject:
   m_ObjectHideFlags: 0
