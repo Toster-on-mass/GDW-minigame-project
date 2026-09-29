@@ -10,7 +10,7 @@ public class FishAnimation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.rotation = Quaternion.Euler(fishBody.linearVelocity.y * gravityRotateMult, 180, 0);
         //Debug.Log(fishBody.linearVelocity.y);

@@ -7,9 +7,11 @@ public class NetCapture : MonoBehaviour
     public Vector2 direction;
     public bool active = false;
 
+    public BoxCollider attachedBoxCollider;
+
     void Start()
     {
-        
+        DeactivateNet();
     }
 
     void Update()
@@ -28,9 +30,11 @@ public class NetCapture : MonoBehaviour
     {
         direction = newDir;
         active = true;
+        attachedBoxCollider.enabled = true;
     }
     public void DeactivateNet()
     {
         active = false;
+        attachedBoxCollider.enabled = false;
     }
 }

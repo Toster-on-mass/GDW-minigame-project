@@ -11,7 +11,7 @@ public class KillFish : MonoBehaviour
 
         if (other.GetComponent<FishJump>() && active)
         {
-            killFishScoreManager.AddScore(1); // Reminder to make fish have score or somthing
+            killFishScoreManager.AddScore(5); // Reminder to make fish have score or somthing
             Destroy(other.gameObject);
         }
     }
