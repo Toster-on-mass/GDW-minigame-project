@@ -17,11 +17,13 @@ public class UImanager : MonoBehaviour
         resartButton.clicked += () => RestartScene();
 
         SetButtonVisiblity(false);
+
+        UpdateScore(0);
     }
 
     public void UpdateScore(int newScore)
     {
-        scoreLabel.text = (newScore.ToString());
+        scoreLabel.text = ("-"+newScore.ToString()+"-");
     }
 
     public void RestartScene()
