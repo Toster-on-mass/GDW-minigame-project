@@ -592,7 +592,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c2d1d7bb997844588c69459d655008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishJumpTrigger
-  jumpMult: 1
+  jumpMult: 1.2
 --- !u!1 &1455331263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1431,14 @@ MonoBehaviour:
     - m_Name: 
       m_Id: b11207ec-1c53-4d32-a972-fdb2697e68bc
       m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Net
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 9ca69278-4987-46ee-9344-e90b3d92eeea
+      m_Path: <Keyboard>/e
       m_Interactions: 
       m_Processors: 
       m_Groups: 
