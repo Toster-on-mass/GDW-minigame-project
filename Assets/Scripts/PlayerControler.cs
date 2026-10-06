@@ -11,7 +11,7 @@ public class PlayerControler : MonoBehaviour
 
     public InputAction moveAction;
     private Vector2 moveInput;
-    private Vector2 currentFacingDirection = new Vector2(1,0);
+    public Vector2 currentFacingDirection = new Vector2(1,0);
     public InputAction netAction;
 
     // 0 - Default Movement
