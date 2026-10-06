@@ -2199,8 +2199,8 @@ MonoBehaviour:
   connectedNetCapture: {fileID: 476700048}
   connectedSprite: {fileID: 1281489944}
   sprites:
-  - {fileID: 151733810975436034, guid: c23151df255ce474890daff3def7791e, type: 3}
-  - {fileID: 3657090388099674715, guid: 865ae5f2a29315247b16167c5807e665, type: 3}
+  - {fileID: -8747108339216397898, guid: 1135c8a1a403c014ea4c6be204edaf5c, type: 3}
+  - {fileID: 2309202991422517197, guid: 3ec41a79cae79b249acd30b9f0556e04, type: 3}
 --- !u!1 &1298731640
 GameObject:
   m_ObjectHideFlags: 0
